@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    line-height: 1.6;
+    background: $color-white;
+    color: $color-grey-dark-3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:visited {
+    color: $color-white;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+h3,
+h4 {
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 1rem 0;
+}

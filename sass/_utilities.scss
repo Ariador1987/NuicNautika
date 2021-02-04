@@ -1,0 +1,68 @@
+.container {
+    max-width: $website-width;
+    padding: 0 2rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 10rem;
+    background: $color-primary-light;
+    display: block;
+    margin: 1rem auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py {
+    &-1 {
+        padding: 1.5rem 0;
+    }
+    &-2 {
+        padding: 2.5rem 0;
+    }
+    &-3 {
+        padding: 3.5rem 0;
+    }
+    &-4 {
+        padding: 4.5rem 0;
+    }
+}
+
+.my {
+    &-1 {
+        margin: 1.5rem 0;
+    }
+    &-2 {
+        margin: 2.5rem 0;
+    }
+    &-3 {
+        margin: 3.5rem 0;
+    }
+    &-4 {
+        margin: 5rem 0;
+    }
+}
+
+.bg-primary {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.bg-secondary {
+    background-color: $color-tertiary-light;
+    color: $color-white;
+}
+
+.bg-dark {
+    background-color: $color-grey-dark-3;
+    color: $color-white;
+}
+
+.bg-light {
+    background: $color-grey-light-3;
+    color: $color-grey-dark-3 !important;
+}
