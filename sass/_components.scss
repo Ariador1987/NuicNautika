@@ -149,6 +149,30 @@
     }
 }
 
+#products {
+    .flex-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+
+        .counter {
+            color: $color-secondary-light;
+            font-family: $counter-font-family;
+            font-size: 5rem;
+        }
+
+        i {
+            background-color: $color-tertiary-light;
+            color: $color-grey-light-3;
+            padding: 3rem;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
 .flex-columns {
     .row {
         display: flex;

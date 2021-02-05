@@ -1,6 +1,7 @@
 .about-heading,
 .products-heading {
     font-size: 3rem;
+    padding-top: 2.5rem;
 }
 
 .hero-typewriter {
@@ -9,4 +10,10 @@
 
 .current {
     color: $color-primary !important;
+}
+
+#hightlight-heading {
+    padding-top: 3rem;
+    font-size: 5rem;
+    color: $color-tertiary-light;
 }
