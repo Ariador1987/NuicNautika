@@ -12,7 +12,8 @@
   width: 10rem;
   background: #7ed56f;
   display: block;
-  margin: 1rem auto;
+  margin: auto;
+  margin-top: 1rem;
 }
 
 .bottom-line-secondary {
@@ -20,7 +21,8 @@
   width: 10rem;
   background: #ffb900;
   display: block;
-  margin: 1rem auto;
+  margin: auto;
+  margin-top: 1rem;
 }
 
 .text-center {
@@ -292,7 +294,8 @@ p {
   height: 100%;
 }
 
-#products .flex-items .counter {
+#products .flex-items .counter,
+#products .flex-items .counter.show {
   color: #ffb900;
   font-family: "Roboto Mono", sans-serif;
   font-size: 5rem;
@@ -367,5 +370,6 @@ p {
   padding-top: 3rem;
   font-size: 5rem;
   color: #2998ff;
+  letter-spacing: 4px;
 }
 /*# sourceMappingURL=main.css.map */

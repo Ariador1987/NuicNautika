@@ -10,14 +10,16 @@
     width: 10rem;
     background: $color-primary-light;
     display: block;
-    margin: 1rem auto;
+    margin: auto;
+    margin-top: 1rem;
 
     &-secondary {
         height: 2px;
         width: 10rem;
         background: $color-secondary-light;
         display: block;
-        margin: 1rem auto;
+        margin: auto;
+        margin-top: 1rem;
     }
 }
 

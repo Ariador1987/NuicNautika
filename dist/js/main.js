@@ -54,6 +54,8 @@ class TypeWriter {
 
 // Init On DOM Load
 document.addEventListener("DOMContentLoaded", init);
+// document.addEventListener("DOMContentLoaded", startCounting);
+window.addEventListener("scroll", checkCountdown);
 
 // Init App
 function init() {
@@ -66,24 +68,63 @@ function init() {
 
 const counters = document.querySelectorAll(".counter");
 
-counters.forEach((counter) => {
-    counter.innerText = "0";
+let wasCounted = false;
+function checkCountdown() {
+    if (!wasCounted) {
+        const triggerBottom = (window.innerHeight / 5) * 4;
+        counters.forEach((counter) => {
+            const boxTop = counter.getBoundingClientRect().top;
 
-    const updateCounter = () => {
-        const target = +counter.getAttribute("data-target");
+            if (boxTop < triggerBottom) {
+                startCounting();
+                wasCounted = true;
+            }
+        });
+    }
+}
 
-        const c = +counter.innerText;
+function startCounting() {
+    counters.forEach((counter) => {
+        counter.innerText = "0";
 
-        const increment = target / 1000;
+        const updateCounter = () => {
+            const target = +counter.getAttribute("data-target");
 
-        if (c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`;
+            const c = +counter.innerText;
 
-            setTimeout(updateCounter, 1);
-        } else {
-            counter.innerText = target;
-        }
-    };
+            const increment = target / 1000;
 
-    updateCounter();
-});
+            if (c < target) {
+                counter.innerText = `${Math.ceil(c + increment)}`;
+
+                setTimeout(updateCounter, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCounter();
+    });
+}
+
+// counters.forEach((counter) => {
+//     counter.innerText = "0";
+
+//     const updateCounter = () => {
+//         const target = +counter.getAttribute("data-target");
+
+//         const c = +counter.innerText;
+
+//         const increment = target / 300;
+
+//         if (c < target) {
+//             counter.innerText = `${Math.ceil(c + increment)}`;
+
+//             setTimeout(updateCounter, 1);
+//         } else {
+//             counter.innerText = target;
+//         }
+//     };
+
+//     updateCounter();
+// });

@@ -157,7 +157,8 @@
         text-align: center;
         height: 100%;
 
-        .counter {
+        .counter,
+        .counter.show {
             color: $color-secondary-light;
             font-family: $counter-font-family;
             font-size: 5rem;
