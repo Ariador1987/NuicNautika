@@ -21,6 +21,15 @@
         margin: auto;
         margin-top: 1rem;
     }
+
+    &-highlight {
+        height: 2px;
+        width: 35rem;
+        background: $color-grey-dark-2;
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+    }
 }
 
 .text-center {
