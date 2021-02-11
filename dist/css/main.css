@@ -112,7 +112,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
-  background: #fff;
+  background: linear-gradient(to bottom right, #f7f7f7, #999);
   color: #333;
 }
 
@@ -240,7 +240,7 @@ p {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.btn, .btn-secondary, .btn-light, .btn-outline {
+.btn, .btn-secondary, .btn-light, .btn-outline, .btn-hightlight {
   display: inline-block;
   cursor: pointer;
   padding: 1rem 3rem;
@@ -303,11 +303,10 @@ p {
   height: 100%;
 }
 
-#products .flex-items .counter,
-#products .flex-items .counter.show {
+#products .flex-items .counter {
   color: #ffb900;
   font-family: "Roboto Mono", sans-serif;
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 #products .flex-items i {
@@ -361,10 +360,38 @@ p {
   margin: 2rem 0;
 }
 
+.flex-grid {
+  padding-top: 4.5rem;
+}
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
+}
+
+.flex-grid .row .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0.5rem;
+}
+
+.flex-grid .row .column img {
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.flex-grid .row .column img:hover {
+  transform: scale(0.98);
+  opacity: 0.8;
+}
+
 .about-heading,
 .products-heading {
   font-size: 3rem;
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
 }
 
 .hero-typewriter {
@@ -376,8 +403,7 @@ p {
 }
 
 #hightlight-heading {
-  padding-top: 3rem;
-  font-size: 5rem;
+  font-size: 5.5rem;
   color: #2998ff;
   letter-spacing: 4px;
 }

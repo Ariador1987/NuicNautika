@@ -15,7 +15,11 @@ body {
     font-family: $default-font-family;
     font-size: $default-font-size;
     line-height: 1.6;
-    background: $color-white;
+    background: linear-gradient(
+        to bottom right,
+        $color-grey-light-1,
+        $color-grey-dark-2
+    );
     color: $color-grey-dark-3;
 }
 

@@ -126,6 +126,10 @@
         background: transparent;
         border: 1px solid $color-grey-dark-3;
     }
+
+    &-hightlight {
+        @extend %btn-shared;
+    }
 }
 
 // FLex items
@@ -157,11 +161,10 @@
         text-align: center;
         height: 100%;
 
-        .counter,
-        .counter.show {
+        .counter {
             color: $color-secondary-light;
             font-family: $counter-font-family;
-            font-size: 5rem;
+            font-size: 3.5rem;
         }
 
         i {
@@ -215,6 +218,34 @@
             p {
                 font-size: 1.8rem;
                 margin: 2rem 0;
+            }
+        }
+    }
+}
+
+// Flex Grid
+.flex-grid {
+    padding-top: 4.5rem;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0.5rem;
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 0.5rem;
+
+            img {
+                border-radius: 3px;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                transform: scale(1);
+
+                &:hover {
+                    transform: scale(0.98);
+                    opacity: 0.8;
+                }
             }
         }
     }
