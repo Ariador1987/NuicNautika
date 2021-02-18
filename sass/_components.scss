@@ -127,6 +127,18 @@
         background: transparent;
         border: 1px solid $color-grey-dark-3;
     }
+
+    &-submit {
+        @extend %btn-shared;
+        margin-top: 3rem;
+        padding: 1rem 0;
+        display: block;
+        width: 90%;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
 }
 
 // BTN HIGHTLIGHT
@@ -297,5 +309,29 @@
 #contact {
     .row-reverse {
         flex-direction: row-reverse;
+    }
+}
+
+.callback-form {
+    width: 100%;
+    padding: 2rem 0;
+
+    label {
+        font-weight: 400;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    input {
+        width: 70%;
+        padding: 0.5rem;
+        height: 4rem;
+        border: $color-grey-light-3 1px solid;
+        box-shadow: $default-box-shadow;
+        margin-bottom: 2rem;
+
+        &:focus {
+            outline-color: $color-primary;
+        }
     }
 }
