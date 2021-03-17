@@ -336,3 +336,20 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .flex-items,
+    .row,
+    .row.row-reverse,
+    .navbar {
+        flex-direction: column !important;
+    }
+
+    .navbar li a {
+        padding: 0 0.7rem;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+}

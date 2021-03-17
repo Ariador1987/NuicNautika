@@ -21,6 +21,10 @@ body {
         $color-grey-dark-2
     );
     color: $color-grey-dark-3;
+
+    @media screen and (max-width: 600px) {
+        background: $color-grey-light-1;
+    }
 }
 
 ul {

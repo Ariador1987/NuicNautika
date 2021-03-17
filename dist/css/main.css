@@ -120,6 +120,12 @@ body {
   color: #333;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    background: #f7f7f7;
+  }
+}
+
 ul {
   list-style-type: none;
 }
@@ -485,6 +491,21 @@ p {
   outline-color: #55c57a;
 }
 
+@media screen and (max-width: 600px) {
+  .flex-items,
+  .row,
+  .row.row-reverse,
+  .navbar {
+    flex-direction: column !important;
+  }
+  .navbar li a {
+    padding: 0 0.7rem;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
 .about-heading,
 .products-heading,
 .contact-heading {
@@ -504,6 +525,12 @@ p {
   font-size: 5.5rem;
   color: #2998ff;
   letter-spacing: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  #hightlight-heading {
+    font-size: 4.5rem;
+  }
 }
 
 .visit-us {

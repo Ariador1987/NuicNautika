@@ -17,6 +17,10 @@
     font-size: 5.5rem;
     color: $color-tertiary-light;
     letter-spacing: 4px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 4.5rem;
+    }
 }
 
 .visit-us {
