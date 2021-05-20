@@ -10,7 +10,7 @@
     width: 10rem;
     background: $color-primary-light;
     display: block;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 1rem;
 
     &-secondary {
@@ -24,10 +24,12 @@
 
     &-highlight {
         height: 2px;
-        width: 35rem;
+        width: 80vw;
+        max-width: 80rem;
         background: $color-grey-dark-2;
         display: block;
-        margin: auto;
+        margin: 0 auto;
+        text-align: center;
         margin-top: 1rem;
     }
 }

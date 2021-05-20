@@ -12,7 +12,7 @@
   width: 10rem;
   background: #7ed56f;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 1rem;
 }
 
@@ -27,10 +27,12 @@
 
 .bottom-line-highlight {
   height: 2px;
-  width: 35rem;
+  width: 80vw;
+  max-width: 80rem;
   background: #999;
   display: block;
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
   margin-top: 1rem;
 }
 
@@ -148,11 +150,24 @@ h2 {
   line-height: 1.2;
 }
 
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.7rem;
+  }
+}
+
 h3,
 h4 {
   letter-spacing: 1px;
   font-weight: 500;
   line-height: 1.2;
+}
+
+@media only screen and (max-width: 768px) {
+  h3,
+  h4 {
+    font-size: 2.4rem;
+  }
 }
 
 img {
@@ -214,6 +229,13 @@ p {
   z-index: 10;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    font-size: 2.2rem;
+  }
+}
+
 .hero-content {
   color: #fff;
   display: flex;
@@ -253,7 +275,7 @@ p {
 .btn, .btn-secondary, .btn-light, .btn-outline, .btn-submit {
   display: inline-block;
   cursor: pointer;
-  padding: 1rem 3rem;
+  padding: 1rem 2.2rem;
   color: #fff;
   background-color: #333;
   border: none;
@@ -290,9 +312,21 @@ p {
   padding: 1rem 0;
   display: block;
   width: 90%;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease;
+  transform: translateY(-1px);
+  box-sizing: 0px 6px 6px rgba(119, 119, 119, 0.4);
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-submit {
+    font-size: 2.2rem;
+  }
 }
 
 .btn-submit:hover {
+  transform: translateY(-3px);
   opacity: 0.9;
 }
 
@@ -316,7 +350,6 @@ p {
 .btn-highlight:link:hover,
 .btn-highlight:visited:hover {
   transform: translateY(-3px);
-  box-shadow: 0px 6px 6px rgba(119, 119, 119, 0.4);
 }
 
 .btn-highlight:hover::after,
@@ -527,9 +560,9 @@ p {
   letter-spacing: 4px;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #hightlight-heading {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -546,5 +579,16 @@ p {
 
 .visit-us > span + i {
   color: orangered;
+}
+
+.form-control input {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-control input {
+    font-size: 2.2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
